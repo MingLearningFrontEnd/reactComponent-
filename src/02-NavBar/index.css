@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    display: flex;
+    height: 50px;
+    width: 400px;
+    margin: 50px auto;
+}
+
+li{
+    line-height: 50px;
+    width: 100px;
+    justify-content: center;
+    text-align: center;
+    list-style: none;
+    background-color: antiquewhite;
+}
+
+.act{
+    background-color: red;
+    color:white
+}
+
+

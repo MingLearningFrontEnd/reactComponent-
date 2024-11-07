@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+// import Count from './01-Count'
+// import NavBar from "./02-NavBar";
+import NavBar2 from "./02.2-NavBar";
+// import TodoList from './03-TodoList'
+// import Cart from './04-Cart'
+// import DropDown from "./05-DropDown";
 
+// import DropDown
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <Count/> */}
+      {/* <NavBar/> */}
+      <NavBar2/>
+      {/* <TodoList/> */}
+      {/* <Cart/> */}
+      {/* <DropDown/> */}
     </div>
+
   );
 }
 
