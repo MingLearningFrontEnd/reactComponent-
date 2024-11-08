@@ -1,9 +1,10 @@
 // import Count from './01-Count'
 // import NavBar from "./02-NavBar";
-import NavBar2 from "./02.2-NavBar";
+// import NavBar2 from "./02.2-NavBar";
 // import TodoList from './03-TodoList'
 // import Cart from './04-Cart'
-// import DropDown from "./05-DropDown";
+import Carousel from "./05-Carousel";
+// import Carousel2 from "./05.2-Carousel-translate";
 
 // import DropDown
 function App() {
@@ -11,10 +12,11 @@ function App() {
     <div>
       {/* <Count/> */}
       {/* <NavBar/> */}
-      <NavBar2/>
+      {/* <NavBar2/> */}
       {/* <TodoList/> */}
       {/* <Cart/> */}
-      {/* <DropDown/> */}
+      <Carousel/>
+      {/* <Carousel2/> */}
     </div>
 
   );
