@@ -1,0 +1,30 @@
+body {
+    font-family: sans-serif;
+  }
+  
+  .outer {
+    display: flex;
+    width: 500px;
+    justify-content: space-evenly;
+    height: 60px;
+  }
+  span {
+    line-height: 60px;
+  }
+  .container {
+    background-color: #c5c5c5;
+    border: 1px solid black;
+  }
+  input {
+    height: 30px;
+    border: none;
+    font-size: 20px;
+    text-align: center;
+    
+  }
+  
+  .font {
+    text-align: center;
+    border-top: 1px solid black;
+  }
+  

@@ -1,0 +1,91 @@
+.analogClock {
+    width: 400px;
+    height: 400px;
+    background-color: #ececec;
+    border-radius: 50%;
+    border: 13px solid #333;
+    margin: 150px auto;
+    position: relative;
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #000;
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.tewlve {
+    position: absolute;
+    font-weight: 700;
+    font-size: 30px;
+    left:46%;
+    top:10px
+}
+
+.three {
+    position: absolute;
+    font-weight: 700;
+    font-size: 30px;
+    right:10px;
+    top:179px
+}
+
+.six {
+    position: absolute;
+    font-weight: 700;
+    font-size: 30px;
+    left:47%;
+    bottom:10px
+}
+
+.nine {
+    position: absolute;
+    font-weight: 700;
+    font-size: 30px;
+    left:10px;
+    top:170px
+}
+
+.hr-hand{
+    width: 10px;
+    height: 120px;
+    background-color: #252525;
+    position: absolute;
+    border-top-left-radius: 30%;
+    border-top-right-radius: 30%;
+    z-index: 5;
+    top: 80px;
+    left: 195px;
+    transform-origin: bottom;
+}
+.mins-hand{
+    width: 7px;
+    height: 150px;
+    background-color: #444343;
+    position: absolute;
+    border-top-left-radius: 40%;
+    border-top-right-radius: 40%;
+    z-index: 6;
+    top:49px;
+    left: 195px;
+    transform-origin: bottom;
+}
+
+.sec-hand{
+    width: 5px;
+    height: 170px;
+    background-color: #6c6969;
+    position: absolute;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    z-index: 7;
+    top:29px;
+    left: 196px;
+    transform-origin: bottom ;
+}

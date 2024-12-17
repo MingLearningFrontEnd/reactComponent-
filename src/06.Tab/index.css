@@ -1,0 +1,38 @@
+.tabs{
+    width: 500px;
+    height: 500px;
+    background-color: aquamarine;
+    margin: 50px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.tab-header{
+    display: flex;
+    font-size: larger;
+    font-weight: 700;
+    height: 60px;
+}
+
+.tabbtn{
+    line-height:60px ;
+    width: 25%;
+    text-align: center;
+    background-color: beige;
+    cursor: pointer;
+}
+.tabbtn.active{
+    background-color: wheat;
+}
+
+.content{
+    height: 100%;
+    width: 100%;
+    background-color:white ;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 40px;
+    font-weight: 700;
+}
+

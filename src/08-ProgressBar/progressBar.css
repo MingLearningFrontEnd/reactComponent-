@@ -1,0 +1,22 @@
+.barcontainer{
+    width: 500px;
+    height: 30px;
+    margin: 20px auto;
+    background-color: #eee;
+    border-radius: 2px;
+    position: relative;
+}
+
+.percent{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+
+
+
+}
+.btn{
+    width: 50px;
+   
+}
