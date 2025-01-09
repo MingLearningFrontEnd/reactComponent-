@@ -14,30 +14,34 @@ const DataTable = () => {
         { label: 'Occupation', key: 'occupation' },
     ]
 
-
+    //这个是分页的重点逻辑
     function paginateUsers(usersList, page, pageSize) {
-        const start = (page - 1) * pageSize;
-        const end = start + pageSize;
-        const pageUsers = usersList.slice(start, end);
-        const totalPages = Math.ceil(usersList.length / pageSize);
-        return { pageUsers, totalPages };
+        const start = (page - 1) * pageSize;//数据需要截取的起点 假如page是1，然后pagesize是5，那就是截取从第0
+        const end = start + pageSize;//数据需要截取的结束点 
+        const pageUsers = usersList.slice(start, end); //截取数据 
+        const totalPages = Math.ceil(usersList.length / pageSize); //用ceil来向上取整
+        return { pageUsers, totalPages };//返回总页数和被截取的数据
     }
 
+    //解构出总页数和被截取的数据
     const { totalPages, pageUsers } = paginateUsers(data, page, pageSize)
     return (
         <>
             <table >
                 <thead>
-                    {
-                        columns.map((item) => (
-                            <th key={item.key}>
-                                {item.label}
-                            </th>
-                        ))
-                    }
+                    <tr>
+                        {
+                            columns.map((item) => (
+                                <th key={item.key}>
+                                    {item.label}
+                                </th>
+                            ))
+                        }
+                    </tr>
+
                 </thead>
                 <tbody>
-                    {
+                    {//用被截取的数据渲染
                         pageUsers.map(({ id, name, age, occupation }) => (
                             <tr key={id}>
                                 <td>{id}</td>

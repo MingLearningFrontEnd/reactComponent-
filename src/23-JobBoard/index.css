@@ -1,0 +1,12 @@
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+li{
+    width: 300px;
+    height: 150px;
+    border: 1px solid black;
+}

@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.digitalClock{
+    width: 400px;
+    height: 180px;
+    border: 10px gray solid;
+    border-radius: 10px;
+    margin: 50px auto;
+    background-color: black;
+}
+
+@font-face {
+    font-family:'Digital-7' ;
+    src: url('../fonts/digital_7/digital-7.ttf');
+}
+.timedisplay{
+    font-family: 'Digital-7', sans-serif;
+    color:white;
+    width: 100%;
+    height: 100%;
+    font-size: 120px;
+    text-align: center;
+   line-height: 180px;
+   
+}

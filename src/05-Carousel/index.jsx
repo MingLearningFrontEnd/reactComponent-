@@ -43,21 +43,18 @@ const Carousel = () => {
         }, 3000)
         return () => clearInterval(timer)
     }, [currentIndex])
-    
+
     return (
         <div className="carousel">
-            <div className="slider-container">
-                <div className="sliders">
-                    {data.map((item, index) => (
-                        <div className="slider">
-                            <img src={item.url} alt={item.des} className={index === currentIndex ? 'image' : 'image-hidden'} />
-                            <div className="text">
-                                <h2>{item.title}</h2>
-                                <p>{item.des}</p>
-                            </div>
-                        </div>
-                    ))}
-                </div>
+            <div className="sliders">
+                {data.map((item, index) => (
+                    <img src={item.url}
+                        alt={item.des}
+                        className={index === currentIndex ? 'image' : 'image-hidden'}
+
+                    />
+                ))}
+
             </div>
 
             <button className="left" onClick={handlePrev}><LeftOutlined /></button>
