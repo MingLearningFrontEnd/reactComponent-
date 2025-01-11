@@ -4,25 +4,32 @@ const TemperatureConveter = () => {
     const [cTem, setCTem] = useState('')
     const [fTem, setFTem] = useState('')
 
- 
+
     const handleCTem = (e) => {
         const value = e.target.value
         setCTem(value)
-        if(value === ''){
+        if (value === '') {
             setFTem('')
-        }else{
-            setFTem((value*9)/5 +32)
+            return
         }
+
+        const fVal = (value * 1.8) + 32
+        setFTem(fVal % 1 === 0 ? fVal : Number(fVal.toFixed(2)))
+
     }
 
-    const handleFTem = (e)=>{
+    const handleFTem = (e) => {
         const value = e.target.value
-        if(value === ''){
-            setCTem('')
-        }else{
-            setCTem(((value - 32) * 5) / 9)
-        }
         setFTem(value)
+        if (value === '') {
+            setCTem('')
+            return
+        }
+        const cVal = (value - 32) / 1.8
+
+        setCTem(cVal%1===0?cVal:Number(cVal.toFixed(2)))
+
+
     }
     return (
         <div className="outer">
@@ -34,7 +41,7 @@ const TemperatureConveter = () => {
             <span>=</span>
 
             <div className="container">
-                <input type="number" onChange={(e) => handleFTem(e)}  value={fTem}/>
+                <input type="number" onChange={(e) => handleFTem(e)} value={fTem} />
                 <div className="font">Fahrenheit</div>
             </div>
         </div>
