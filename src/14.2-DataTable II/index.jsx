@@ -27,13 +27,14 @@ const DataTableII = () => {
     });
 
     //重点 处理每页的数据个数和总页个数
-    const configedData = (data, page, pageSize) => {
+    const configeData = (data, page, pageSize) => {
         const start = (page - 1) * pageSize
         const end = start + pageSize
-        const splicedData = data.slice(start, end)
+        const slicedData = data.slice(start, end)
         const totalPages = Math.ceil(data.length / pageSize) //ceil向上取整
-        return { splicedData, totalPages }
+        return { slicedData, totalPages }
     }
+    const { slicedData, totalPages } = configeData(sortedData, page, pageSize)
 
     // 点击表头处理排序
     const handleSort = (key) => {
@@ -42,7 +43,7 @@ const DataTableII = () => {
             direction: prevSortConfig.key === key && prevSortConfig.direction === 'asc' ? 'desc' : 'asc',
         }));
     };
-    const { splicedData, totalPages } = configedData(sortedData, page, pageSize)
+   
     return (
         <div>
             <table>
@@ -57,7 +58,7 @@ const DataTableII = () => {
                 </thead>
                 <tbody>
 
-                    {splicedData.map(({ id, name, age, occupation }) => (
+                    {slicedData.map(({ id, name, age, occupation }) => (
                         <tr key={id}>
                             <td key={id}>{id}</td>
                             <td key={name}>{name}</td>

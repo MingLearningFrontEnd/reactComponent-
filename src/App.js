@@ -7,8 +7,9 @@
 // import Carousel2 from "./05.2-Carousel-translate";
 // import CarouselResponsive from "./05.3-Carousel-responsive";
 // import Tabs from "./06.Tab";
-import StopWatch from "./07-StopWatch/StopWatch";
+// import StopWatch from "./07-StopWatch/StopWatch";
 // import ProgressBar from './08-ProgressBar/ProgressBar'
+// import ProgressBars from './08.2-ProgressBars/ProgressBarsWrapper'
 // import FlightBooker from './09-FlightBooker'
 // import TableGenerator from './10-GenerateTable'
 // import TemperatureConveter from "./11-TemperatureConverter";
@@ -16,6 +17,7 @@ import StopWatch from "./07-StopWatch/StopWatch";
 // import AnalogClock from "./13-Analog Clock";
 // import DataTable from "./14-DataTable";
 // import DataTableII from "./14.2-DataTable II";
+import DataTableIII from './14.3DataTableIII/DataTableIII'
 // import FileExplorerWrapper from "./15-FileExplorer/FileExplorerWrapper";
 // import FileExplorerIIWrapper from "./15.2-FileExplorerII/FileExplorerIIWrapper";
 // import GridLights from "./16-GridLights";
@@ -46,8 +48,9 @@ function App() {
       {/* <Carousel2/> */}
       {/* <CarouselResponsive/> */}
       {/* <Tabs/> */}
-      <StopWatch/>
+      {/* <StopWatch/> */}
       {/* <ProgressBar/> */}
+      {/* <ProgressBars/> */}
       {/* <FlightBooker /> */}
       {/* <TableGenerator/> */}
       {/* <TemperatureConveter/> */}
@@ -55,10 +58,11 @@ function App() {
       {/* <AnalogClock /> */}
       {/* <DataTable /> */}
       {/* <DataTableII />  */}
+      <DataTableIII/>
       {/* <FileExplorerWrapper/> */}
       {/* <FileExplorerIIWrapper /> */}
       {/* <GridLights/> */}
-      {/* <LikeButton/>   需要完善*/}
+      {/* <LikeButton/>   需要完善 */}
       {/* <ModalWrapper/> */}
       {/* <StarRating/> */}
       {/* <TrafficLight /> */}
