@@ -12,12 +12,12 @@
 // import ProgressBars from './08.2-ProgressBars/ProgressBarsWrapper'
 // import FlightBooker from './09-FlightBooker'
 // import TableGenerator from './10-GenerateTable'
-import TemperatureConveter from "./11-TemperatureConverter";
+// import TemperatureConveter from "./11-TemperatureConverter";
 // import AccordionWrap from './12-Accordion'
 // import AnalogClock from "./13-Analog Clock";
 // import DataTable from "./14-DataTable";
 // import DataTableII from "./14.2-DataTable II";
-// import DataTableIII from './14.3DataTableIII/DataTableIII'
+import DataTableIII from './14.3DataTableIII/DataTableIII'
 // import FileExplorerWrapper from "./15-FileExplorer/FileExplorerWrapper";
 // import FileExplorerIIWrapper from "./15.2-FileExplorerII/FileExplorerIIWrapper";
 // import GridLights from "./16-GridLights";
@@ -53,12 +53,12 @@ function App() {
       {/* <ProgressBars/> */}
       {/* <FlightBooker /> */}
       {/* <TableGenerator/> */}
-      <TemperatureConveter/>
+      {/* <TemperatureConveter/> */}
       {/* <AccordionWrap /> */}
       {/* <AnalogClock /> */}
       {/* <DataTable /> */}
       {/* <DataTableII />  */}
-      {/* <DataTableIII/> */}
+      <DataTableIII/>
       {/* <FileExplorerWrapper/> */}
       {/* <FileExplorerIIWrapper /> */}
       {/* <GridLights/> */}
