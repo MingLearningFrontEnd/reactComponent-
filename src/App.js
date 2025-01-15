@@ -2,6 +2,7 @@
 // import NavBar from "./02-NavBar";
 // import NavBar2 from "./02.2-NavBar";
 // import TodoList from './03-TodoList'
+import TodoListII from './03.2-TodoListII/TodiListII'
 // import Cart from './04-Cart'
 // import Carousel from "./05-Carousel";
 // import Carousel2 from "./05.2-Carousel-translate";
@@ -16,8 +17,8 @@
 // import AccordionWrap from './12-Accordion'
 // import AnalogClock from "./13-Analog Clock";
 // import DataTable from "./14-DataTable";
-// import DataTableII from "./14.2-DataTable II";
-import DataTableIII from './14.3DataTableIII/DataTableIII'
+// import DataTableII from "./14.2-DataTableII";
+// import DataTableIII from './14.3DataTableIII/DataTableIII'
 // import FileExplorerWrapper from "./15-FileExplorer/FileExplorerWrapper";
 // import FileExplorerIIWrapper from "./15.2-FileExplorerII/FileExplorerIIWrapper";
 // import GridLights from "./16-GridLights";
@@ -31,7 +32,7 @@ import DataTableIII from './14.3DataTableIII/DataTableIII'
 // import EditableTableWrapper from './24-editable-Table/EditableTableWrapper'
 // import AutoCompleteWrapper from './25-AutoComplete/AutoCompleteWrapper'
 // import AutoCompleteWrapperII from "./25.2-AutoCompleteII/AutoCompleteWrapperII.jsx";
-
+// import DiceRoller from "./26-DiceRoller/DiceRoller";
 
 
 
@@ -43,6 +44,7 @@ function App() {
       {/* <NavBar/> */}
       {/* <NavBar2/> */}
       {/* <TodoList/> */}
+      <TodoListII/>
       {/* <Cart/> */}
       {/* <Carousel/> */}
       {/* <Carousel2/> */}
@@ -58,7 +60,7 @@ function App() {
       {/* <AnalogClock /> */}
       {/* <DataTable /> */}
       {/* <DataTableII />  */}
-      <DataTableIII/>
+      {/* <DataTableIII/> */}
       {/* <FileExplorerWrapper/> */}
       {/* <FileExplorerIIWrapper /> */}
       {/* <GridLights/> */}
@@ -72,7 +74,7 @@ function App() {
       {/* <EditableTableWrapper/> */}
       {/* <AutoCompleteWrapper /> */}
       {/* <AutoCompleteWrapperII /> */}
-
+      {/* <DiceRoller /> */}
 
 
 

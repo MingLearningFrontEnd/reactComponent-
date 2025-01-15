@@ -1,10 +1,8 @@
 import React, { useCallback, useState } from "react";
-import './index.css'
-const Practice = () => {
+import './todolist.css'
+const TodoListII = () => {
   const [list, setList] = useState([]);
   const [todo, setTodo] = useState("");
-
-
 
   const handleInputChange = (e) => { //onchange绑定input值 ，并且将值debounce，debounce里可以写请求
     const value = e.target.value
@@ -24,7 +22,7 @@ const Practice = () => {
   }
 
   const add = () => {//点击add，会将list展开并加上done这个属性
-    setList([...list, { done: false, value: todo }])
+    setList([...list, { done: false, value: todo }]) //重点是这，加了个done属性
     setTodo('')
   }
 
@@ -44,13 +42,12 @@ const Practice = () => {
     }))
   }
 
-
-
   const del = (index) => {
     const narr = [...list]
     narr.splice(index, 1)
     setList(narr)
   }
+
   return (
     <div className='container'>
       <h1>To do List</h1>
@@ -60,7 +57,7 @@ const Practice = () => {
         {
           list.map((item, index) => {
             return (
-              <div key={index} style={{ display: 'flex', justifyContent: 'space-evenly' }}>
+              <div key={index} style={{ display: 'flex', justifyContent: 'space-between',marginTop:10 }}>
                 <li key={index}
                   onClick={() => toggleDone(index)}
                   style={{
@@ -82,7 +79,6 @@ const Practice = () => {
   );
 };
 
-export default Practice;
-
+export default TodoListII;
 
 
